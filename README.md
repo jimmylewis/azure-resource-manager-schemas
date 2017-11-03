@@ -1,6 +1,6 @@
 # azure-resource-manager-schemas 
 
-This is the repo for template deployment schemas hosted at:  https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json
+This is the repo for template deployment schemas hosted at:  https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json
 
 Welcome to contribute to template deployment schemas, please send pull request to improve the schemas. We will review the pull request and publish the latest schemas to https://schema.management.azure.com/schemas
 

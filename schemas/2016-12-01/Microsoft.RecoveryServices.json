@@ -1,5 +1,5 @@
 {
-  "id": "https://schema.management.azure.com/schemas/2016-12-01/Microsoft.RecoveryServices.json#",
+  "id": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-12-01/Microsoft.RecoveryServices.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Microsoft.RecoveryServices",
   "description": "Microsoft RecoveryServices Resource Types",
@@ -35,7 +35,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource tags."
@@ -50,7 +50,7 @@
               "$ref": "#/definitions/ProtectedItem"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "ProtectedItemResource properties"
@@ -95,7 +95,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource tags."
@@ -110,7 +110,7 @@
               "$ref": "#/definitions/ProtectionPolicy"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "ProtectionPolicyResource properties"
@@ -135,7 +135,7 @@
               "$ref": "#/definitions/SchedulePolicy"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Backup schedule specified as part of backup policy."
@@ -146,7 +146,7 @@
               "$ref": "#/definitions/RetentionPolicy"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention policy with the details on backup copy retention ranges."
@@ -167,7 +167,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Health Code"
@@ -189,7 +189,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Health Recommended Actions"
@@ -226,7 +226,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Backup state of this backup item."
@@ -243,7 +243,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Health status of protected item."
@@ -257,7 +257,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Health details on this backup item."
@@ -281,7 +281,7 @@
               "$ref": "#/definitions/AzureIaaSVMProtectedItemExtendedInfo"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Additional information for this backup item."
@@ -303,7 +303,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Number of backup copies available for this backup item."
@@ -314,7 +314,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Specifies if backup policy associated with the backup item is inconsistent."
@@ -331,7 +331,7 @@
               "$ref": "#/definitions/RetentionPolicy"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention policy details."
@@ -353,7 +353,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Number of available backup copies associated with this backup item."
@@ -377,7 +377,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "List of days of the month."
@@ -397,7 +397,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention times of retention policy."
@@ -408,7 +408,7 @@
               "$ref": "#/definitions/RetentionDuration"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention duration of retention Policy."
@@ -425,7 +425,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Date of the month"
@@ -436,7 +436,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Whether Date is last date of month"
@@ -469,7 +469,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Protection state of the backupengine."
@@ -480,7 +480,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "To check if backup item is scheduled for deferred delete"
@@ -491,7 +491,7 @@
               "$ref": "#/definitions/DPMProtectedItemExtendedInfo"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Extended info of the backup item."
@@ -511,7 +511,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Attribute to provide information on various DBs."
@@ -522,7 +522,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "To check if backup item is disk protected."
@@ -533,7 +533,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "To check if backup item is cloud protected."
@@ -558,7 +558,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "cloud recovery point count."
@@ -579,7 +579,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "disk recovery point count."
@@ -590,7 +590,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "To check if backup item is collocated."
@@ -619,7 +619,7 @@
               "$ref": "#/definitions/DailyRetentionSchedule"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Daily retention schedule of the protection policy."
@@ -630,7 +630,7 @@
               "$ref": "#/definitions/WeeklyRetentionSchedule"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Weekly retention schedule of the protection policy."
@@ -641,7 +641,7 @@
               "$ref": "#/definitions/MonthlyRetentionSchedule"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Monthly retention schedule of the protection policy."
@@ -652,7 +652,7 @@
               "$ref": "#/definitions/YearlyRetentionSchedule"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Yearly retention schedule of the protection policy."
@@ -672,7 +672,7 @@
               "$ref": "#/definitions/SchedulePolicy"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Backup schedule of backup policy."
@@ -683,7 +683,7 @@
               "$ref": "#/definitions/RetentionPolicy"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention policy details."
@@ -716,7 +716,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Specifies if the item is scheduled for deferred deletion."
@@ -727,7 +727,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Sync time for deferred deletion."
@@ -738,7 +738,7 @@
               "$ref": "#/definitions/MabFileFolderProtectedItemExtendedInfo"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Additional information with this backup item."
@@ -765,7 +765,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Number of backup copies associated with the backup item."
@@ -794,7 +794,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Backup state of the backed up item."
@@ -805,7 +805,7 @@
               "$ref": "#/definitions/AzureSqlProtectedItemExtendedInfo"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Additional information for this backup item."
@@ -827,7 +827,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention schedule format type for monthly retention policy."
@@ -838,7 +838,7 @@
               "$ref": "#/definitions/DailyRetentionFormat"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Daily retention format for monthly retention policy."
@@ -849,7 +849,7 @@
               "$ref": "#/definitions/WeeklyRetentionFormat"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Weekly retention format for monthly retention policy."
@@ -863,7 +863,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention times of retention policy."
@@ -874,7 +874,7 @@
               "$ref": "#/definitions/RetentionDuration"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention duration of retention Policy."
@@ -899,7 +899,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ]
             },
@@ -917,7 +917,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ],
               "description": "Type of backup managemenent for the backed up item."
@@ -941,7 +941,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ],
               "description": "Type of workload this item represents."
@@ -1000,7 +1000,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ]
             },
@@ -1010,7 +1010,7 @@
                   "type": "integer"
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ],
               "description": "Number of items associated with this policy."
@@ -1042,7 +1042,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Count of duration types. Retention duration is obtained by the counting the duration type Count times. \r\n            For example, when Count = 3 and DurationType = Weeks, retention duration will be three weeks."
@@ -1060,7 +1060,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention duration type of retention policy."
@@ -1083,7 +1083,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ]
             }
@@ -1116,7 +1116,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ]
             }
@@ -1144,7 +1144,7 @@
               "$ref": "#/definitions/RetentionDuration"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention duration of the protection policy."
@@ -1166,7 +1166,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Frequency of the schedule operation of this policy."
@@ -1189,7 +1189,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "List of days of week this schedule has to be run."
@@ -1203,7 +1203,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "List of times of day this schedule has to be run."
@@ -1214,7 +1214,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "At every number weeks this schedule has to be run."
@@ -1243,7 +1243,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "List of days of the week."
@@ -1264,7 +1264,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "List of weeks of month."
@@ -1293,7 +1293,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "List of days of week for weekly retention policy."
@@ -1307,7 +1307,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention times of retention policy."
@@ -1318,7 +1318,7 @@
               "$ref": "#/definitions/RetentionDuration"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention duration of retention Policy."
@@ -1340,7 +1340,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention schedule format for yearly retention policy."
@@ -1369,7 +1369,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "List of months of year of yearly retention policy."
@@ -1380,7 +1380,7 @@
               "$ref": "#/definitions/DailyRetentionFormat"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Daily retention format for yearly retention policy."
@@ -1391,7 +1391,7 @@
               "$ref": "#/definitions/WeeklyRetentionFormat"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Weekly retention format for yearly retention policy."
@@ -1405,7 +1405,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention times of retention policy."
@@ -1416,7 +1416,7 @@
               "$ref": "#/definitions/RetentionDuration"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Retention duration of retention Policy."

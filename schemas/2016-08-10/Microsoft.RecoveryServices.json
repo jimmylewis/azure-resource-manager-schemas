@@ -1,5 +1,5 @@
 {
-  "id": "https://schema.management.azure.com/schemas/2016-08-10/Microsoft.RecoveryServices.json#",
+  "id": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Microsoft.RecoveryServices",
   "description": "Microsoft RecoveryServices Resource Types",
@@ -28,7 +28,7 @@
               "$ref": "#/definitions/ConfigureAlertRequestProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The properties of a configure alert request."
@@ -66,7 +66,7 @@
               "$ref": "#/definitions/FabricCreationInputProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Fabric creation input."
@@ -117,7 +117,7 @@
               "$ref": "#/definitions/CreateNetworkMappingInputProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Input properties for creating network mapping."
@@ -155,7 +155,7 @@
               "$ref": "#/definitions/CreateProtectionContainerInputProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Create protection container input properties."
@@ -206,7 +206,7 @@
               "$ref": "#/definitions/EnableProtectionInputProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Enable protection input properties."
@@ -244,7 +244,7 @@
               "$ref": "#/definitions/CreateProtectionContainerMappingInputProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Configure protection input properties."
@@ -282,7 +282,7 @@
               "$ref": "#/definitions/StorageMappingInputProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Storage mapping input properties."
@@ -320,7 +320,7 @@
               "$ref": "#/definitions/AddVCenterRequestProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The properties of an add vCenter request."
@@ -358,7 +358,7 @@
               "$ref": "#/definitions/CreatePolicyInputProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Policy creation properties."
@@ -396,7 +396,7 @@
               "$ref": "#/definitions/CreateRecoveryPlanInputProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Recovery plan creation properties."
@@ -444,7 +444,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The list of vm disk details."
@@ -458,7 +458,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The list of vm managed disk details."
@@ -549,7 +549,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The fabric location."
@@ -586,7 +586,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The custom email address for sending emails."
@@ -615,7 +615,7 @@
               "$ref": "#/definitions/FabricSpecificCreateNetworkMappingInput"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Fabric specific input properties."
@@ -632,7 +632,7 @@
               "$ref": "#/definitions/PolicyProviderSpecificInput"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The ReplicationProviderSettings."
@@ -652,7 +652,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Provider specific inputs for container creation."
@@ -677,7 +677,7 @@
               "$ref": "#/definitions/ReplicationProviderSpecificContainerMappingInput"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Provider specific input for pairing."
@@ -707,7 +707,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The failover deployment model."
@@ -721,7 +721,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The recovery plan groups."
@@ -751,7 +751,7 @@
               "$ref": "#/definitions/EnableProtectionProviderSpecificInput"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The ReplicationProviderInput. For HyperVReplicaAzure provider, it will be AzureEnableProtectionInput object. For San provider, it will be SanEnableProtectionInput object. For HyperVReplicaAzure provider, it can be null."
@@ -777,7 +777,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ]
             }
@@ -814,7 +814,7 @@
               "$ref": "#/definitions/FabricSpecificCreationInput"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Fabric provider specific creation input."
@@ -838,7 +838,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ]
             }
@@ -875,7 +875,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ]
             }
@@ -903,7 +903,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value indicating the number of recovery points."
@@ -914,7 +914,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value indicating the application consistent frequency."
@@ -945,7 +945,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value indicating the recovery HTTPS port."
@@ -956,7 +956,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value indicating the authentication type."
@@ -977,7 +977,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value indicating the replication interval."
@@ -988,7 +988,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value indicating the number of recovery points."
@@ -999,7 +999,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value indicating the application consistent frequency."
@@ -1030,7 +1030,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value indicating the recovery HTTPS port."
@@ -1041,7 +1041,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value indicating the authentication type."
@@ -1105,7 +1105,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The list of VHD IDs of disks to be protected."
@@ -1166,7 +1166,7 @@
               "$ref": "#/definitions/InMageDiskExclusionInput"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The enable disk exclusion input."
@@ -1180,7 +1180,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The disks to include list."
@@ -1231,7 +1231,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The disks to include list."
@@ -1286,7 +1286,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The volume label based option for disk exclusion."
@@ -1300,7 +1300,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The guest disk signature based option for disk exclusion."
@@ -1362,7 +1362,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ]
             }
@@ -1427,7 +1427,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The list of failover types."
@@ -1445,7 +1445,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The list of failover directions."
@@ -1456,7 +1456,7 @@
               "$ref": "#/definitions/RecoveryPlanActionDetails"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The custom details."
@@ -1486,7 +1486,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ]
             }
@@ -1522,7 +1522,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The group type."
@@ -1536,7 +1536,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The list of protected items."
@@ -1550,7 +1550,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The start group actions."
@@ -1564,7 +1564,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The end group actions."
@@ -1603,7 +1603,7 @@
                   ]
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+                  "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
                 }
               ]
             }
@@ -1653,7 +1653,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The fabric location."
@@ -1699,7 +1699,7 @@
               "$ref": "#/definitions/CreateProtectionContainerInputProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Create protection container input properties."
@@ -1747,7 +1747,7 @@
               "$ref": "#/definitions/EnableProtectionInputProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Enable protection input properties."
@@ -1785,7 +1785,7 @@
               "$ref": "#/definitions/CreateProtectionContainerMappingInputProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Configure protection input properties."
@@ -1823,7 +1823,7 @@
               "$ref": "#/definitions/AddVCenterRequestProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The properties of an add vCenter request."
@@ -1852,7 +1852,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The duration in minutes until which the recovery points need to be stored."
@@ -1863,7 +1863,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The crash consistent snapshot frequency (in minutes)."
@@ -1874,7 +1874,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The app consistent snapshot frequency (in minutes)."

@@ -1,5 +1,5 @@
 {
-  "id": "https://schema.management.azure.com/schemas/2014-09-01/Microsoft.ServiceBus.json#",
+  "id": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.ServiceBus.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Microsoft.ServiceBus",
   "description": "Microsoft ServiceBus Resource Types",
@@ -32,7 +32,7 @@
               "$ref": "#/definitions/Sku"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         },
@@ -45,7 +45,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Namespace tags."
@@ -56,7 +56,7 @@
               "$ref": "#/definitions/NamespaceProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         },
@@ -117,7 +117,7 @@
               "$ref": "#/definitions/SharedAccessAuthorizationRuleProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         }
@@ -161,7 +161,7 @@
               "$ref": "#/definitions/QueueProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         },
@@ -216,7 +216,7 @@
               "$ref": "#/definitions/SharedAccessAuthorizationRuleProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         }
@@ -260,7 +260,7 @@
               "$ref": "#/definitions/TopicProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         },
@@ -318,7 +318,7 @@
               "$ref": "#/definitions/SharedAccessAuthorizationRuleProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         }
@@ -362,7 +362,7 @@
               "$ref": "#/definitions/SubscriptionProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         }
@@ -402,7 +402,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "State of the namespace."
@@ -413,7 +413,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Indicates whether to create an ACS namespace."
@@ -424,7 +424,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Specifies whether this instance is enabled."
@@ -461,7 +461,7 @@
               "$ref": "#/definitions/SharedAccessAuthorizationRuleProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         }
@@ -503,7 +503,7 @@
               "$ref": "#/definitions/SharedAccessAuthorizationRuleProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         }
@@ -545,7 +545,7 @@
               "$ref": "#/definitions/QueueProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         },
@@ -598,7 +598,7 @@
               "$ref": "#/definitions/SharedAccessAuthorizationRuleProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         }
@@ -640,7 +640,7 @@
               "$ref": "#/definitions/TopicProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         },
@@ -696,7 +696,7 @@
               "$ref": "#/definitions/SubscriptionProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         }
@@ -734,7 +734,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Entity availability status for the queue."
@@ -753,7 +753,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value that indicates whether server-side batched operations are enabled."
@@ -764,7 +764,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value that indicates whether this queue has dead letter support when a message expires."
@@ -775,7 +775,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value that indicates whether Express Entities are enabled. An express queue holds a message in memory temporarily before writing it to persistent storage."
@@ -786,7 +786,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value that indicates whether the queue is to be partitioned across multiple message brokers."
@@ -797,7 +797,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value that indicates whether the message is accessible anonymously."
@@ -808,7 +808,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The maximum delivery count. A message is automatically deadlettered after this number of deliveries."
@@ -819,7 +819,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The maximum size of the queue in megabytes, which is the size of memory allocated for the queue."
@@ -830,7 +830,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value indicating if this queue requires duplicate detection."
@@ -841,7 +841,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value that indicates whether the queue supports the concept of sessions."
@@ -863,7 +863,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Enumerates the possible values for the status of a messaging entity."
@@ -874,7 +874,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A value that indicates whether the queue supports ordering."
@@ -899,7 +899,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The rights associated with the rule."
@@ -944,7 +944,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Name of this SKU."
@@ -960,7 +960,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The billing tier of this particular SKU."
@@ -971,7 +971,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The specified messaging units for the tier."
@@ -999,7 +999,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value that indicates whether a subscription has dead letter support on filter evaluation exceptions."
@@ -1010,7 +1010,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value that indicates whether a subscription has dead letter support when a message expires."
@@ -1021,7 +1021,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value that indicates whether server-side batched operations are enabled."
@@ -1039,7 +1039,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Entity availability status for the topic."
@@ -1050,7 +1050,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value that indicates whether the entity description is read-only."
@@ -1065,7 +1065,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Number of maximum deliveries."
@@ -1076,7 +1076,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value indicating if a subscription supports the concept of sessions."
@@ -1098,7 +1098,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Enumerates the possible values for the status of a messaging entity."
@@ -1126,7 +1126,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Entity availability status for the topic."
@@ -1145,7 +1145,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value that indicates whether server-side batched operations are enabled."
@@ -1156,7 +1156,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value that indicates whether Express Entities are enabled. An express topic holds a message in memory temporarily before writing it to persistent storage."
@@ -1167,7 +1167,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value that indicates whether the topic to be partitioned across multiple message brokers is enabled."
@@ -1178,7 +1178,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value that indicates whether partitioning is enabled or disabled."
@@ -1189,7 +1189,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Whether messages should be filtered before publishing."
@@ -1200,7 +1200,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value that indicates whether the message is accessible anonymously."
@@ -1211,7 +1211,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ]
         },
@@ -1221,7 +1221,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Maximum size of the topic in megabytes, which is the size of the memory allocated for the topic."
@@ -1232,7 +1232,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value indicating if this topic requires duplicate detection."
@@ -1254,7 +1254,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Enumerates the possible values for the status of a messaging entity."
@@ -1265,7 +1265,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Value that indicates whether the topic supports ordering."

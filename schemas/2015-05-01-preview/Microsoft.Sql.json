@@ -1,5 +1,5 @@
 {
-  "id": "https://schema.management.azure.com/schemas/2015-05-01-preview/Microsoft.Sql.json#",
+  "id": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Sql.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Microsoft.Sql",
   "description": "Microsoft Sql Resource Types",
@@ -36,7 +36,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource tags."
@@ -47,7 +47,7 @@
               "$ref": "#/definitions/ResourceIdentity"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The Azure Active Directory identity of the server."
@@ -58,7 +58,7 @@
               "$ref": "#/definitions/ServerProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -119,7 +119,7 @@
               "$ref": "#/definitions/DatabaseBlobAuditingPolicyProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -157,7 +157,7 @@
               "$ref": "#/definitions/SyncGroupProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -205,7 +205,7 @@
               "$ref": "#/definitions/SyncMemberProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -247,7 +247,7 @@
               "$ref": "#/definitions/EncryptionProtectorProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -288,7 +288,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource tags."
@@ -299,7 +299,7 @@
               "$ref": "#/definitions/FailoverGroupProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -341,7 +341,7 @@
               "$ref": "#/definitions/ServerKeyProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -379,7 +379,7 @@
               "$ref": "#/definitions/SyncAgentProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -417,7 +417,7 @@
               "$ref": "#/definitions/VirtualNetworkRuleProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -446,7 +446,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Specifies the state of the policy. If state is Enabled, storageEndpoint and storageAccountAccessKey are required."
@@ -465,7 +465,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Specifies the number of days to keep in the audit logs."
@@ -479,7 +479,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Specifies the Actions and Actions-Groups to audit."
@@ -491,7 +491,7 @@
               "pattern": "^[0-9a-fA-F]{8}(-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}$"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Specifies the blob storage subscription Id."
@@ -502,7 +502,7 @@
               "type": "boolean"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Specifies whether storageAccountAccessKey value is the storage’s secondary key."
@@ -530,7 +530,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The encryption protector type like 'ServiceManaged', 'AzureKeyVault'."
@@ -550,7 +550,7 @@
               "$ref": "#/definitions/FailoverGroupReadWriteEndpoint"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Read-write endpoint of the failover group instance."
@@ -561,7 +561,7 @@
               "$ref": "#/definitions/FailoverGroupReadOnlyEndpoint"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Read-only endpoint of the failover group instance."
@@ -575,7 +575,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "List of partner server information for the failover group."
@@ -589,7 +589,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "List of databases in the failover group."
@@ -614,7 +614,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Failover policy of the read-only endpoint for the failover group."
@@ -635,7 +635,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Failover policy of the read-write endpoint for the failover group. If failoverPolicy is Automatic then failoverWithDataLossGracePeriodMinutes is required."
@@ -646,7 +646,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Grace period before failover with data loss is attempted for the read-write endpoint. If failoverPolicy is Automatic then failoverWithDataLossGracePeriodMinutes is required."
@@ -696,7 +696,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The server key type like 'ServiceManaged', 'AzureKeyVault'."
@@ -762,7 +762,7 @@
               "$ref": "#/definitions/SyncMemberProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -804,7 +804,7 @@
               "$ref": "#/definitions/EncryptionProtectorProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -845,7 +845,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource tags."
@@ -856,7 +856,7 @@
               "$ref": "#/definitions/FailoverGroupProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -898,7 +898,7 @@
               "$ref": "#/definitions/ServerKeyProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -936,7 +936,7 @@
               "$ref": "#/definitions/SyncAgentProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -974,7 +974,7 @@
               "$ref": "#/definitions/VirtualNetworkRuleProperties"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource properties."
@@ -1007,7 +1007,7 @@
               "type": "integer"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Sync interval of the sync group."
@@ -1022,7 +1022,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Conflict resolution policy of the sync group."
@@ -1045,7 +1045,7 @@
               "$ref": "#/definitions/SyncGroupSchema"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Sync schema of the sync group."
@@ -1065,7 +1065,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "List of tables in sync group schema."
@@ -1089,7 +1089,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "List of columns in sync group schema."
@@ -1132,7 +1132,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Database type of the sync member."
@@ -1148,7 +1148,7 @@
               "pattern": "^[0-9a-fA-F]{8}(-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}$"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "SQL Server database id of the sync member."
@@ -1180,7 +1180,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Sync direction of the sync member."

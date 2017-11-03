@@ -1,5 +1,5 @@
 {
-  "id": "https://schema.management.azure.com/schemas/2014-04-01-preview/microsoft.visualstudio.json#",
+  "id": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01-preview/microsoft.visualstudio.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "microsoft.visualstudio",
   "description": "microsoft visualstudio Resource Types",
@@ -42,7 +42,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The custom properties of the resource."
@@ -56,7 +56,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "The custom tags of the resource."
@@ -111,7 +111,7 @@
               "$ref": "#/definitions/ExtensionResourcePlan"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Extended information about the plan being purchased for this extension resource."
@@ -125,7 +125,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A dictionary of extended properties. This property is currently unused."
@@ -139,7 +139,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A dictionary of user-defined tags to be stored with the extension resource."
@@ -184,7 +184,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource tags."
@@ -198,7 +198,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Key/value pair of resource properties."
@@ -242,7 +242,7 @@
               "$ref": "#/definitions/ExtensionResourcePlan"
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Extended information about the plan being purchased for this extension resource."
@@ -256,7 +256,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A dictionary of extended properties. This property is currently unused."
@@ -270,7 +270,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "A dictionary of user-defined tags to be stored with the extension resource."
@@ -315,7 +315,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Resource tags."
@@ -329,7 +329,7 @@
               }
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
+              "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression"
             }
           ],
           "description": "Key/value pair of resource properties."
