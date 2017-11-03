@@ -355,14 +355,6 @@
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Solutions.json#/resourceDefinitions/applicationDefinitions"},
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Solutions.json#/resourceDefinitions/applications"},
 
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.StorSimple.json#/resourceDefinitions/managers"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.StorSimple.json#/resourceDefinitions/managers_accessControlRecords"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.StorSimple.json#/resourceDefinitions/managers_bandwidthSettings"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.StorSimple.json#/resourceDefinitions/managers_devices_backupPolicies"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.StorSimple.json#/resourceDefinitions/managers_devices_backupPolicies_schedules"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.StorSimple.json#/resourceDefinitions/managers_devices_volumeContainers"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.StorSimple.json#/resourceDefinitions/managers_devices_volumeContainers_volumes"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.StorSimple.json#/resourceDefinitions/managers_storageAccountCredentials"},
 
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Storage.json#/resourceDefinitions/storageAccounts"},
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Storage.json#/resourceDefinitions/storageAccounts"},
