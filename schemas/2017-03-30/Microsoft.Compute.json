@@ -3315,7 +3315,7 @@
         "settings": {
           "oneOf": [
             { "type": "object" },
-            { "$ref": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression" }
+            { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#/definitions/expression" }
           ],
           "description": "Microsoft.Compute/extensions - Settings"
         }
