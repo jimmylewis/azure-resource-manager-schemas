@@ -320,9 +320,7 @@
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationFabrics_replicationvCenters"},
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationPolicies"},
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationRecoveryPlans"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-12-01/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_backupFabrics_protectionContainers_protectedItems"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-12-01/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_backupPolicies"},
-
+                  
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Relay.json#/resourceDefinitions/namespaces"},
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_AuthorizationRules"},
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_HybridConnections"},
