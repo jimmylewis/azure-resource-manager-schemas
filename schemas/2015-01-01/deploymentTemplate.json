@@ -359,11 +359,6 @@
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-01/Microsoft.Storage.json#/resourceDefinitions/storageAccounts"},
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-12-01/Microsoft.Storage.json#/resourceDefinitions/storageAccounts"},
 
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.StreamAnalytics.json#/resourceDefinitions/streamingjobs"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.StreamAnalytics.json#/resourceDefinitions/streamingjobs_functions"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.StreamAnalytics.json#/resourceDefinitions/streamingjobs_inputs"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.StreamAnalytics.json#/resourceDefinitions/streamingjobs_outputs"},
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.StreamAnalytics.json#/resourceDefinitions/streamingjobs_transformations"},
 
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01-preview/Microsoft.Web.json#/resourceDefinitions/connections"},
 
