@@ -714,7 +714,7 @@
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_wcfRelay_authorizationRules" },
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_hybridConnection" },
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_hybridConnection_authorizationRules" },
-                  { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.StreamAnalytics.json#/resourceDefinitions/streamingjobs" },
+                  
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs" },
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_authorizationPolicies" },
                   { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_connectors" },
