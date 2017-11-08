@@ -1,0 +1,1274 @@
+{
+  "id": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/deploymentTemplate.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Template",
+  "description": "An Azure deployment template",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON schema reference"
+    },
+    "contentVersion": {
+      "type": "string",
+      "pattern": "(^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+$)",
+      "description": "A 4 number format for the version number of this template file. For example, 1.0.0.0"
+    },
+    "variables": {
+      "type": "object",
+      "description": "Variable definitions"
+    },
+    "parameters": {
+      "type": "object",
+      "description": "Input parameter definitions",
+      "additionalProperties": {
+        "$ref": "#/definitions/parameter"
+      }
+    },
+    "resources": {
+      "type": "array",
+      "description": "Collection of resources to be deployed",
+      "items": {
+        "oneOf": [
+          {
+            "allOf": [
+              {
+                "$ref": "#/definitions/resourceBase"
+              },
+              {
+                "properties": {
+
+                  "Microsoft.AAD": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.AAD.json#/resourceDefinitions/domainServices" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.AAD.json#/resourceDefinitions/domainServices" }
+                    ]
+                  },
+
+                  "Microsoft.AnalysisServices": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-14/Microsoft.AnalysisServices.json#/resourceDefinitions/servers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01-beta/Microsoft.AnalysisServices.json#/resourceDefinitions/servers" }
+                    ]
+                  },
+
+                  "Microsoft.ApiManagement": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_apis" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_apis_operations" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_authorizationServers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_backends" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_certificates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_groups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_groups_users" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_identityProviders" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_loggers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_openidConnectProviders" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_products" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_products_apis" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_products_groups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_properties" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_subscriptions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-10/Microsoft.ApiManagement.json#/resourceDefinitions/service_users" }
+                    ]
+                  },
+
+                  "Microsoft.Batch": {
+                    "oneof": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.Batch.json#/resourceDefinitions/batchAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.Batch.json#/resourceDefinitions/batchAccounts_applications" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.Batch.json#/resourceDefinitions/batchAccounts_applications_versions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-05-01/Microsoft.Batch.json#/resourceDefinitions/batchAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-05-01/Microsoft.Batch.json#/resourceDefinitions/batchAccounts_applications" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-05-01/Microsoft.Batch.json#/resourceDefinitions/batchAccounts_applications_versions" }
+                    ]
+                  },
+
+                  "Microsoft.BatchAI": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01-preview/Microsoft.BatchAI.json#/resourceDefinitions/clusters" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01-preview/Microsoft.BatchAI.json#/resourceDefinitions/fileServers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01-preview/Microsoft.BatchAI.json#/resourceDefinitions/jobs" }
+                    ]
+                  },
+
+                  "Microsoft.Cache": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-02-01/Microsoft.Cache.json#/resourceDefinitions/Redis" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-02-01/Microsoft.Cache.json#/resourceDefinitions/Redis_firewallRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-02-01/Microsoft.Cache.json#/resourceDefinitions/Redis_linkedServers" }
+                    ]
+                  },
+
+                  "Microsoft.Cdn": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-02/Microsoft.Cdn.json#/resourceDefinitions/profiles" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-02/Microsoft.Cdn.json#/resourceDefinitions/profiles_endpoints" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-02/Microsoft.Cdn.json#/resourceDefinitions/profiles_endpoints_customDomains" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-02/Microsoft.Cdn.json#/resourceDefinitions/profiles" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-02/Microsoft.Cdn.json#/resourceDefinitions/profiles_endpoints" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-02/Microsoft.Cdn.json#/resourceDefinitions/profiles_endpoints_customDomains" }
+                    ]
+                  },
+
+                  "Microsoft.CognitiveServices": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-18/Microsoft.CognitiveServices.json#/resourceDefinitions/accounts" }
+                    ]
+                  },
+
+                  "Microsoft.Compute": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Compute.json#/resourceDefinitions/availabilitySets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Compute.json#/resourceDefinitions/virtualMachineScaleSets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Compute.json#/resourceDefinitions/virtualMachines" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Compute.json#/resourceDefinitions/virtualMachines_extensions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Compute.json#/resourceDefinitions/availabilitySets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Compute.json#/resourceDefinitions/virtualMachineScaleSets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Compute.json#/resourceDefinitions/virtualMachines" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Compute.json#/resourceDefinitions/virtualMachines_extensions" }
+                    ]
+                  },
+
+                  "Microsoft.ContainerInstance": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01-preview/Microsoft.ContainerInstance.json#/resourceDefinitions/containerGroups" }
+                    ]
+                  },
+
+                  "Microsoft.ContainerRegistry": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ContainerRegistry.json#/resourceDefinitions/registries" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01-preview/Microsoft.ContainerRegistry.json#/resourceDefinitions/registries" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01-preview/Microsoft.ContainerRegistry.json#/resourceDefinitions/registries_replications" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01-preview/Microsoft.ContainerRegistry.json#/resourceDefinitions/registries_webhooks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-10-01/Microsoft.ContainerRegistry.json#/resourceDefinitions/registries" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-10-01/Microsoft.ContainerRegistry.json#/resourceDefinitions/registries_replications" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-10-01/Microsoft.ContainerRegistry.json#/resourceDefinitions/registries_webhooks" }
+                    ]
+                  },
+
+                  "Microsoft.ContainerService": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-11-01-preview/Microsoft.ContainerService.json#/resourceDefinitions/containerServices" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-30/Microsoft.ContainerService.json#/resourceDefinitions/containerServices" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-31/Microsoft.ContainerService.json#/resourceDefinitions/containerServices" }
+                    ]
+                  },
+
+                  "Microsoft.CustomerInsights": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_authorizationPolicies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_connectors" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_connectors_mappings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_interactions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_kpi" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_links" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_profiles" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_relationshipLinks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_relationships" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_roleAssignments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_views" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_authorizationPolicies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_connectors" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_connectors_mappings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_interactions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_kpi" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_links" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_predictions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_profiles" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_relationshipLinks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_relationships" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_roleAssignments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-26/Microsoft.CustomerInsights.json#/resourceDefinitions/hubs_views" }
+                    ]
+                  },
+
+                  "Microsoft.DbforMySQL": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-30-preview/Microsoft.DBforMySQL.json#/resourceDefinitions/servers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-30-preview/Microsoft.DBforMySQL.json#/resourceDefinitions/servers_configurations" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-30-preview/Microsoft.DBforMySQL.json#/resourceDefinitions/servers_databases" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-30-preview/Microsoft.DBforMySQL.json#/resourceDefinitions/servers_firewallRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-30-preview/Microsoft.DBforMySQL.json#/resourceDefinitions/servers_virtualNetworkRules" }
+                    ]
+                  },
+
+                  "Microsoft.DBforPostgreSQL": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-30-preview/Microsoft.DBforPostgreSQL.json#/resourceDefinitions/servers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-30-preview/Microsoft.DBforPostgreSQL.json#/resourceDefinitions/servers_configurations" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-30-preview/Microsoft.DBforPostgreSQL.json#/resourceDefinitions/servers_databases" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-30-preview/Microsoft.DBforPostgreSQL.json#/resourceDefinitions/servers_firewallRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-30-preview/Microsoft.DBforPostgreSQL.json#/resourceDefinitions/servers_virtualNetworkRules" }
+                    ]
+                  },
+
+                  "Microsoft.DataFactory": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01-preview/Microsoft.DataFactory.json#/resourceDefinitions/factories" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01-preview/Microsoft.DataFactory.json#/resourceDefinitions/factories_datasets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01-preview/Microsoft.DataFactory.json#/resourceDefinitions/factories_integrationRuntimes" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01-preview/Microsoft.DataFactory.json#/resourceDefinitions/factories_linkedservices" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01-preview/Microsoft.DataFactory.json#/resourceDefinitions/factories_pipelines" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01-preview/Microsoft.DataFactory.json#/resourceDefinitions/factories_triggers" }
+                    ]
+                  },
+
+                  "Microsoft.Devices": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-19/Microsoft.Devices.json#/resourceDefinitions/IotHubs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-19/Microsoft.Devices.json#/resourceDefinitions/IotHubs_eventHubEndpoints_ConsumerGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01/Microsoft.Devices.json#/resourceDefinitions/IotHubs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01/Microsoft.Devices.json#/resourceDefinitions/IotHubs_certificates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01/Microsoft.Devices.json#/resourceDefinitions/IotHubs_eventHubEndpoints_ConsumerGroups" }
+                    ]
+                  },
+
+                  "Microsoft.DomainRegistration": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.DomainRegistration.json#/resourceDefinitions/domains" }
+                    ]
+                  },
+
+                  "Microsoft.EventGrid": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-15-preview/Microsoft.EventGrid.json#/resourceDefinitions/topics" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-15-preview/Microsoft.EventGrid.json#/resourceDefinitions/topics" }
+                    ]
+                  },
+
+                  "Microsoft.HDInsight": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-03-01-preview/Microsoft.HDInsight.json#/resourceDefinitions/clusters" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-03-01-preview/Microsoft.HDInsight.json#/resourceDefinitions/clusters_applications" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-03-01-preview/Microsoft.HDInsight.json#/resourceDefinitions/clusters_extensions" }
+                    ]
+                  },
+
+                  "Microsoft.ImportExport": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.ImportExport.json#/resourceDefinitions/jobs" }
+                    ]
+                  },
+
+                  "Microsoft.KeyVault": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-01/Microsoft.KeyVault.json#/resourceDefinitions/vaults" }
+                    ]
+                  },
+
+                  "Microsoft.Logic": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01-preview/Microsoft.Logic.json#/resourceDefinitions/integrationAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01-preview/Microsoft.Logic.json#/resourceDefinitions/integrationAccounts_agreements" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01-preview/Microsoft.Logic.json#/resourceDefinitions/integrationAccounts_certificates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01-preview/Microsoft.Logic.json#/resourceDefinitions/integrationAccounts_maps" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01-preview/Microsoft.Logic.json#/resourceDefinitions/integrationAccounts_partners" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01-preview/Microsoft.Logic.json#/resourceDefinitions/integrationAccounts_schemas" }
+                    ]
+                  },
+
+                  "Microsoft.MachineLearning": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-01-01/Microsoft.MachineLearning.json#/resourceDefinitions/webServices" }
+                    ]
+                  },
+
+                  "Microsoft.MachineLearningCompute": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01-preview/Microsoft.MachineLearningCompute.json#/resourceDefinitions/operationalizationClusters" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01-preview/Microsoft.MachineLearningCompute.json#/resourceDefinitions/operationalizationClusters" }
+                    ]
+                  },
+
+                  "Microsoft.Network": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/applicationGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/connections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits_authorizations" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits_peerings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/localNetworkGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups_securityRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/routeTables_routes" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/virtualnetworkgateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/virtualnetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Network.json#/resourceDefinitions/virtualnetworks_subnets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/applicationGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/connections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits_authorizations" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits_peerings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/localNetworkGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups_securityRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/routeTables_routes" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/virtualNetworkGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Network.json#/resourceDefinitions/virtualnetworks_subnets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/applicationGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/connections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits_authorizations" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits_peerings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/localNetworkGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups_securityRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/routeTables_routes" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/virtualNetworkGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.Network.json#/resourceDefinitions/virtualNetworks_subnets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/applicationGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/connections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits_authorizations" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits_peerings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers_inboundNatRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/localNetworkGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups_securityRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/networkWatchers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/networkWatchers_packetCaptures" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/routeFilters" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/routeFilters_routeFilterRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/routeTables_routes" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworkGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks_subnets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-08-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks_virtualNetworkPeerings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/applicationGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/applicationSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/connections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/dnsZones" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/dnsZones_A" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/dnsZones_AAAA" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/dnsZones_CAA" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/dnsZones_CNAME" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/dnsZones_MX" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/dnsZones_NS" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/dnsZones_PTR" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/dnsZones_SOA" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/dnsZones_SRV" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/dnsZones_TXT" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits_authorizations" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/expressRouteCircuits_peerings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers_inboundNatRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/localNetworkGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups_securityRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/networkWatchers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/networkWatchers_packetCaptures" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/routeFilters" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/routeFilters_routeFilterRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/routeTables_routes" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworkGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks_subnets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks_virtualNetworkPeerings" }
+                    ]
+                  },
+
+                  "Microsoft.NotificationHubs": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces_notificationHubs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces_notificationHubs_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces_notificationHubs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces_notificationHubs_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces_notificationHubs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces_notificationHubs_AuthorizationRules" }
+                    ]
+                  },
+
+                  "Microsoft.OperatoinalInsights": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-03-20/Microsoft.OperationalInsights.json#/resourceDefinitions/workspaces_savedSearches" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-03-20/Microsoft.OperationalInsights.json#/resourceDefinitions/workspaces_storageInsightConfigs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-11-01-preview/Microsoft.OperationalInsights.json#/resourceDefinitions/workspaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-11-01-preview/Microsoft.OperationalInsights.json#/resourceDefinitions/workspaces_dataSources" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-11-01-preview/Microsoft.OperationalInsights.json#/resourceDefinitions/workspaces_features_machineGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-11-01-preview/Microsoft.OperationalInsights.json#/resourceDefinitions/workspaces_linkedServices" }
+                    ]
+                  },
+
+                  "Microsoft.OperationsManagement": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-11-01-preview/Microsoft.OperationsManagement.json#/resourceDefinitions/solutions" }
+                    ]
+                  },
+
+                  "Microsoft.RecoveryServices": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationAlertSettings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationFabrics" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationFabrics_replicationNetworks_replicationNetworkMappings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationFabrics_replicationProtectionContainers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationFabrics_replicationProtectionContainers_replicationProtectedItems" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationFabrics_replicationProtectionContainers_replicationProtectionContainerMappings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationFabrics_replicationStorageClassifications_replicationStorageClassificationMappings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationFabrics_replicationvCenters" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationPolicies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-10/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults_replicationRecoveryPlans" }
+                    ]
+                  },
+
+                  "Microsoft.Relay": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Relay.json#/resourceDefinitions/namespaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_HybridConnections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_HybridConnections_authorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_WcfRelays" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_WcfRelays_authorizationRules" }
+                    ]
+                  },
+
+                  "Microsoft.Resources": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-11-01/Microsoft.Resources.json#/resourceDefinitions/deployments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Resources.json#/resourceDefinitions/deployments" }
+                    ]
+                  },
+
+                  "Microsoft.Scheduler": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-01-01/Microsoft.Scheduler.json#/resourceDefinitions/jobCollections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-01-01/Microsoft.Scheduler.json#/resourceDefinitions/jobCollections_jobs" }
+                    ]
+                  },
+
+                  "Microsoft.Search": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-02-28/Microsoft.Search.json#/resourceDefinitions/searchServices" }
+                    ]
+                  },
+
+                  "Microsoft.ServiceBus": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_queues" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_queues_authorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_topics" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_topics_authorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-09-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_topics_subscriptions" }
+                    ]
+                  },
+
+                  "Microsoft.ServiceFabric": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01-preview/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01-preview/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters_applicationTypes" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01-preview/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters_applicationTypes_versions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01-preview/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters_applications" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01-preview/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters_applications_services" }
+                    ]
+                  },
+
+                  "Microsoft.Solutions": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Solutions.json#/resourceDefinitions/applicationDefinitions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-09-01/Microsoft.Solutions.json#/resourceDefinitions/applications" }
+                    ]
+                  },
+
+                  "Microsoft.Storage": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Storage.json#/resourceDefinitions/storageAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-15/Microsoft.Storage.json#/resourceDefinitions/storageAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-01/Microsoft.Storage.json#/resourceDefinitions/storageAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-12-01/Microsoft.Storage.json#/resourceDefinitions/storageAccounts" }
+                    ]
+                  },
+
+                  "Microsoft.Web": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01-preview/Microsoft.Web.json#/resourceDefinitions/connections" }
+                    ]
+                  },
+
+                  "Microsoft.Insights": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-04-01/microsoft.insights.json#/resourceDefinitions/autoscalesettings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01/microsoft.insights.json#/resourceDefinitions/components" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01/microsoft.insights.json#/resourceDefinitions/components_exportconfiguration" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01/microsoft.insights.json#/resourceDefinitions/webtests" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/microsoft.insights.json#/resourceDefinitions/alertrules" }
+                    ]
+                  },
+
+                  "Microsoft.VisualStudio": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01-preview/microsoft.visualstudio.json#/resourceDefinitions/account" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01-preview/microsoft.visualstudio.json#/resourceDefinitions/account_extension" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01-preview/microsoft.visualstudio.json#/resourceDefinitions/account_project" }
+                    ]
+                  },
+
+                  "Microsoft.WhatAMess": {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-19/Microsoft.Search.json#/resourceDefinitions/searchServices" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-16/Microsoft.AnalysisServices.json#/resourceDefinitions/servers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-01/Microsoft.RecoveryServices.json#/resourceDefinitions/vaults" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-07-01-preview/Microsoft.ServerManagement.json#/resourceDefinitions/nodes" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-07-01-preview/Microsoft.ServerManagement.json#/resourceDefinitions/gateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-07-01-preview/Microsoft.ServerManagement.json#/resourceDefinitions/sessions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01-preview/Microsoft.ServerManagement.json#/resourceDefinitions/nodes" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01-preview/Microsoft.ServerManagement.json#/resourceDefinitions/gateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01-preview/Microsoft.ServerManagement.json#/resourceDefinitions/sessions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-04-08/Microsoft.DocumentDB.json#/resourceDefinitions/databaseAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-01/Microsoft.KeyVault.json#/resourceDefinitions/secrets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-15/Microsoft.DevTestLab.json#/resourceDefinitions/labs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-15/Microsoft.DevTestLab.json#/resourceDefinitions/labs_artifactsources" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-15/Microsoft.DevTestLab.json#/resourceDefinitions/labs_customimages" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-15/Microsoft.DevTestLab.json#/resourceDefinitions/labs_formulas" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-15/Microsoft.DevTestLab.json#/resourceDefinitions/labs_policysets_policies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-15/Microsoft.DevTestLab.json#/resourceDefinitions/labs_schedules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-15/Microsoft.DevTestLab.json#/resourceDefinitions/labs_virtualmachines" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-15/Microsoft.DevTestLab.json#/resourceDefinitions/labs_virtualnetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-21-preview/Microsoft.DevTestLab.json#/resourceDefinitions/labs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-21-preview/Microsoft.DevTestLab.json#/resourceDefinitions/virtualMachines" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-06-01/Microsoft.Web.json#/resourceDefinitions/certificates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-06-01/Microsoft.Web.json#/resourceDefinitions/serverfarms" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Web.json#/resourceDefinitions/certificates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Web.json#/resourceDefinitions/serverfarms" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-04-01/Microsoft.DomainRegistration.json#/resourceDefinitions/domains" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-04-01/Microsoft.DomainRegistration.json#/resourceDefinitions/domains_domainOwnershipIdentifiers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.CertificateRegistration.json#/resourceDefinitions/certificateOrders" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.CertificateRegistration.json#/resourceDefinitions/certificateOrders_certificates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.Web.json#/resourceDefinitions/certificates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.Web.json#/resourceDefinitions/csrs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_appsettings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_config" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_connectionstrings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_deployments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_domainOwnershipIdentifiers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_hostNameBindings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_hybridconnection" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_hybridConnectionNamespaces_relays" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_instances_deployments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_premieraddons" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_publicCertificates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_appsettings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_config" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_connectionstrings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_deployments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_domainOwnershipIdentifiers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_hostNameBindings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_hybridconnection" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_hybridConnectionNamespaces_relays" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_instances_deployments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_premieraddons" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_publicCertificates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_virtualNetworkConnections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_virtualNetworkConnections_gateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_sourcecontrol" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_slots_sourcecontrol" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_virtualNetworkConnections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Web.json#/resourceDefinitions/sites_virtualNetworkConnections_gateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Web.json#/resourceDefinitions/hostingEnvironments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Web.json#/resourceDefinitions/hostingEnvironments_workerPools" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Web.json#/resourceDefinitions/hostingEnvironments_multiRolePools" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Web.json#/resourceDefinitions/serverfarms" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Web.json#/resourceDefinitions/serverfarms_virtualNetworkConnections_gateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Web.json#/resourceDefinitions/serverfarms_virtualNetworkConnections_routes" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01-preview/Microsoft.Sql.json#/resourceDefinitions/databases" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01-preview/Microsoft.Sql.json#/resourceDefinitions/firewallrules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01-preview/Microsoft.Sql.json#/resourceDefinitions/administrators" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01-preview/Microsoft.Sql.json#/resourceDefinitions/disasterrecoveryconfiguration" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Insights.json#/resourceDefinitions/alertrules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Insights.json#/resourceDefinitions/components" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Insights.json#/resourceDefinitions/autoscalesettings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Insights.json#/resourceDefinitions/webtests" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-02-26/microsoft.visualstudio.json#/resourceDefinitions/account" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01-preview/Microsoft.Cache.json#/resourceDefinitions/Redis" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.BizTalkServices.json#/resourceDefinitions/BizTalk" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.BizTalkServices.json#/resourceDefinitions/HybridConnection" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-03-01-preview/Microsoft.AppService.json#/resourceDefinitions/apiapps" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-03-01-preview/Microsoft.AppService.json#/resourceDefinitions/registrations" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-04-01/Microsoft.NotificationHubs.json#/resourceDefinitions/notificationHubs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01-preview/Microsoft.DataConnect.json#/resourceDefinitions/connectionManagers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Cache.json#/resourceDefinitions/Redis" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-11-01/Microsoft.Network.json#/resourceDefinitions/trafficManagerProfiles" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.Network.json#/resourceDefinitions/trafficManagerProfiles" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-05-01/Microsoft.Network.json#/resourceDefinitions/trafficManagerProfiles" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Storage.json#/resourceDefinitions/storageAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-01-01/Microsoft.Storage.json#/resourceDefinitions/storageAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.Storage.json#/resourceDefinitions/storageAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Compute.json#/resourceDefinitions/availabilitySets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Compute.json#/resourceDefinitions/extensions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Compute.json#/resourceDefinitions/virtualMachineScaleSets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-01/Microsoft.KeyVault.json#/resourceDefinitions/vaults" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-06-01/Microsoft.Web.json#/resourceDefinitions/sites" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Web.json#/resourceDefinitions/sites" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01-preview/Microsoft.Sql.json#/resourceDefinitions/servers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-08-01-preview/Microsoft.Scheduler.json#/resourceDefinitions/jobCollections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-03-01-preview/Microsoft.AppService.json#/resourceDefinitions/gateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-04-01/Microsoft.NotificationHubs.json#/resourceDefinitions/namespaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.Compute.json#/resourceDefinitions/virtualMachines" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-01-preview/Microsoft.DataLakeStore.json#/resourceDefinitions/accounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.DataLakeStore.json#/resourceDefinitions/accounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.DataLakeStore.json#/resourceDefinitions/accounts_firewallRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.DataLakeStore.json#/resourceDefinitions/accounts_trustedIdProviders" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-01-preview/Microsoft.DataLakeAnalytics.json#/resourceDefinitions/accounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.DataLakeAnalytics.json#/resourceDefinitions/accounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.DataLakeAnalytics.json#/resourceDefinitions/accounts_dataLakeStoreAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.DataLakeAnalytics.json#/resourceDefinitions/accounts_storageAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.DataLakeAnalytics.json#/resourceDefinitions/accounts_firewallRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.DataLakeAnalytics.json#/resourceDefinitions/accounts_computePolicies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-02-01-preview/Microsoft.CognitiveServices.json#/resourceDefinitions/accounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-01-29/Microsoft.PowerBI.json#/resourceDefinitions/workspaceCollections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-10-01/Microsoft.PowerBIDedicated.json#/resourceDefinitions/capacities" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.DataCatalog.json#/resourceDefinitions/catalogs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-30/Microsoft.ContainerService.json#/resourceDefinitions/containerServices" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-04-preview/Microsoft.Network.json#/resourceDefinitions/dnszones" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-04-preview/Microsoft.Network.json#/resourceDefinitions/dnszones_A" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-04-preview/Microsoft.Network.json#/resourceDefinitions/dnszones_AAAA" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-04-preview/Microsoft.Network.json#/resourceDefinitions/dnszones_CNAME" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-04-preview/Microsoft.Network.json#/resourceDefinitions/dnszones_MX" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-04-preview/Microsoft.Network.json#/resourceDefinitions/dnszones_NS" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-04-preview/Microsoft.Network.json#/resourceDefinitions/dnszones_PTR" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-04-preview/Microsoft.Network.json#/resourceDefinitions/dnszones_SOA" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-04-preview/Microsoft.Network.json#/resourceDefinitions/dnszones_SRV" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-04-preview/Microsoft.Network.json#/resourceDefinitions/dnszones_TXT" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.Network.json#/resourceDefinitions/dnszones" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.Network.json#/resourceDefinitions/dnszones_A" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.Network.json#/resourceDefinitions/dnszones_AAAA" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.Network.json#/resourceDefinitions/dnszones_CNAME" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.Network.json#/resourceDefinitions/dnszones_MX" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.Network.json#/resourceDefinitions/dnszones_NS" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.Network.json#/resourceDefinitions/dnszones_PTR" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.Network.json#/resourceDefinitions/dnszones_SOA" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.Network.json#/resourceDefinitions/dnszones_SRV" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.Network.json#/resourceDefinitions/dnszones_TXT" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-01/Microsoft.Cdn.json#/resourceDefinitions/profiles" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-01/Microsoft.Cdn.json#/resourceDefinitions/profiles_endpoints" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-01/Microsoft.Cdn.json#/resourceDefinitions/profiles_endpoints_customDomains" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-06-01/Microsoft.Cdn.json#/resourceDefinitions/profiles_endpoints_origins" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-02/Microsoft.Cdn.json#/resourceDefinitions/profiles" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-02/Microsoft.Cdn.json#/resourceDefinitions/profiles_endpoints" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-02/Microsoft.Cdn.json#/resourceDefinitions/profiles_endpoints_customDomains" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-02/Microsoft.Cdn.json#/resourceDefinitions/profiles_endpoints_origins" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-12-01/Microsoft.Batch.json#/resourceDefinitions/batchAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-12-01/Microsoft.Batch.json#/resourceDefinitions/batchAccounts_applications" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-12-01/Microsoft.Batch.json#/resourceDefinitions/batchAccounts_applications_versions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.Cache.json#/resourceDefinitions/Redis" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-02-01-preview/Microsoft.Logic.json#/resourceDefinitions/workflows" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-01/Microsoft.Logic.json#/resourceDefinitions/workflows" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-01/Microsoft.Web.json#/resourceDefinitions/connections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-01/Microsoft.Web.json#/resourceDefinitions/connectionGateways" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-01/Microsoft.Web.json#/resourceDefinitions/customApis" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.Scheduler.json#/resourceDefinitions/jobCollections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.Scheduler.json#/resourceDefinitions/jobCollections_jobs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-01-preview/Microsoft.MachineLearning.json#/resourceDefinitions/webServices" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-05-01-preview/Microsoft.MachineLearning.json#/resourceDefinitions/commitmentPlans" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-01/Microsoft.MachineLearning.json#/resourceDefinitions/workspaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-31/Microsoft.Automation.json#/resourceDefinitions/automationAccounts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-31/Microsoft.Automation.json#/resourceDefinitions/runbooks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-31/Microsoft.Automation.json#/resourceDefinitions/modules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-31/Microsoft.Automation.json#/resourceDefinitions/certificates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-31/Microsoft.Automation.json#/resourceDefinitions/connections" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-31/Microsoft.Automation.json#/resourceDefinitions/variables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-31/Microsoft.Automation.json#/resourceDefinitions/schedules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-31/Microsoft.Automation.json#/resourceDefinitions/jobs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-31/Microsoft.Automation.json#/resourceDefinitions/jobSchedules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-10-01/Microsoft.Media.json#/resourceDefinitions/mediaServices" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-02-03/Microsoft.Devices.json#/resourceDefinitions/IotHubs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-03-01/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01-preview/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01-preview/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters_applicationTypes" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01-preview/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters_applicationTypes_versions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01-preview/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters_applications" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-07-01-preview/Microsoft.ServiceFabric.json#/resourceDefinitions/clusters_applications_services" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_queues" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_queues_authorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_topics" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_topics_authorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_topics_subscriptions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.EventHub.json#/resourceDefinitions/namespaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.EventHub.json#/resourceDefinitions/namespaces_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.EventHub.json#/resourceDefinitions/namespaces_eventhubs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.EventHub.json#/resourceDefinitions/namespaces_eventhubs_authorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-08-01/Microsoft.EventHub.json#/resourceDefinitions/namespaces_eventhubs_consumergroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Authorization.json#/resourceDefinitions/locks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Resources.json#/resourceDefinitions/deployments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-05-10/Microsoft.Resources.json#/resourceDefinitions/deployments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01-preview/Microsoft.Solutions.json#/resourceDefinitions/applianceDefinitions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01-preview/Microsoft.Solutions.json#/resourceDefinitions/appliances" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-07/Microsoft.ApiManagement.json#/resourceDefinitions/service" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_apis" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_apis_operations" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_apis_operations_policies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_apis_policies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_apis_schemas" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_authorizationServers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_backends" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_certificates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_groups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_groups_users" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_identityProviders" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_loggers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_openidConnectProviders" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_policies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_products" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_products_apis" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_products_groups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_products_policies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_properties" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_subscriptions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_templates" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.ApiManagement.json#/resourceDefinitions/service_users" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-30-preview/Microsoft.Compute.json#/resourceDefinitions/disks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-30-preview/Microsoft.Compute.json#/resourceDefinitions/snapshots" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-30-preview/Microsoft.Compute.json#/resourceDefinitions/images" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-30-preview/Microsoft.Compute.json#/resourceDefinitions/availabilitySets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-30-preview/Microsoft.Compute.json#/resourceDefinitions/virtualMachines" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-30-preview/Microsoft.Compute.json#/resourceDefinitions/virtualMachineScaleSets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-04-30-preview/Microsoft.Compute.json#/resourceDefinitions/extensions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-27-preview/Microsoft.ContainerRegistry.json#/resourceDefinitions/registries" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01-preview/Microsoft.Insights.json#/resourceDefinitions/actionGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01-preview/Microsoft.Insights.json#/resourceDefinitions/activityLogAlerts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-06-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-07-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-08-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-09-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-10-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-11-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-12-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-12-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-12-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-12-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-12-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-12-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.Network.json#/resourceDefinitions/publicIPAddresses" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.Network.json#/resourceDefinitions/virtualNetworks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.Network.json#/resourceDefinitions/loadBalancers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.Network.json#/resourceDefinitions/networkSecurityGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.Network.json#/resourceDefinitions/networkInterfaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-06-01/Microsoft.Network.json#/resourceDefinitions/routeTables" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-30/Microsoft.Compute.json#/resourceDefinitions/disks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-30/Microsoft.Compute.json#/resourceDefinitions/snapshots" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-30/Microsoft.Compute.json#/resourceDefinitions/images" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-30/Microsoft.Compute.json#/resourceDefinitions/availabilitySets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-30/Microsoft.Compute.json#/resourceDefinitions/virtualMachines" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-30/Microsoft.Compute.json#/resourceDefinitions/virtualMachineScaleSets" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-03-30/Microsoft.Compute.json#/resourceDefinitions/extensions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.Insights.json#/resourceDefinitions/actionGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.Insights.json#/resourceDefinitions/activityLogAlerts" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_administrators" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_auditingPolicies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_backupLongTermRetentionVaults" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_communicationLinks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_connectionPolicies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_databases" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_databases_advisors" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_databases_auditingPolicies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_databases_backupLongTermRetentionPolicies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_databases_dataMaskingPolicies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_databases_dataMaskingPolicies_rules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_databases_extensions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_databases_geoBackupPolicies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_databases_securityAlertPolicies" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_databases_transparentDataEncryption" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_elasticPools" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/Microsoft.Sql.json#/resourceDefinitions/servers_firewallRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Sql.json#/resourceDefinitions/servers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Sql.json#/resourceDefinitions/servers_databases_auditingSettings" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Sql.json#/resourceDefinitions/servers_databases_syncGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Sql.json#/resourceDefinitions/servers_databases_syncGroups_syncMembers" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Sql.json#/resourceDefinitions/servers_encryptionProtector" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Sql.json#/resourceDefinitions/servers_failoverGroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Sql.json#/resourceDefinitions/servers_keys" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Sql.json#/resourceDefinitions/servers_syncAgents" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-05-01-preview/Microsoft.Sql.json#/resourceDefinitions/servers_virtualNetworkRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_queues" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_queues_authorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_topics" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_topics_authorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_topics_subscriptions" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.ServiceBus.json#/resourceDefinitions/namespaces_topics_subscriptions_rule" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.EventHub.json#/resourceDefinitions/namespaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.EventHub.json#/resourceDefinitions/namespaces_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.EventHub.json#/resourceDefinitions/namespaces_eventhubs" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.EventHub.json#/resourceDefinitions/namespaces_eventhubs_authorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.EventHub.json#/resourceDefinitions/namespaces_eventhubs_consumergroups" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.Relay.json#/resourceDefinitions/namespaces" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_AuthorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_wcfRelay" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_wcfRelay_authorizationRules" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_hybridConnection" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2017-04-01/Microsoft.Relay.json#/resourceDefinitions/namespaces_hybridConnection_authorizationRules" }
+                    ]
+                  }
+                }
+              },
+              {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/resourceBaseExternal"
+                  },
+                  {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-04-01/SuccessBricks.ClearDB.json#/resourceDefinitions/databases" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/Sendgrid.Email.json#/resourceDefinitions/accounts" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/ARMResourceBase"
+                  },
+                  {
+                    "oneOf": [
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/Microsoft.Resources.json#/resourceDefinitions/deployments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2016-02-01/Microsoft.Resources.json#/resourceDefinitions/deployments" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/Microsoft.Resources.json#/resourceDefinitions/links" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2015-01-01/Microsoft.Authorization.json#/resourceDefinitions/locks" },
+                      { "$ref": "https://raw.githubusercontent.com/fearthecowboy/azure-resource-manager-schemas/relative/schemas/2014-10-01-preview/Microsoft.Authorization.json#/resourceDefinitions/roleAssignments" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "outputs": {
+        "type": "object",
+        "description": "Output parameter definitions",
+        "additionalProperties": {
+          "$ref": "#/definitions/output"
+        }
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "$schema",
+      "contentVersion",
+      "resources"
+    ],
+    "definitions": {
+      "ARMResourceBase": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the resource"
+          },
+          "type": {
+            "type": "string",
+            "description": "Resource type"
+          },
+          "condition": {
+            "oneOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "$ref": "#/definitions/expression"
+              }
+            ],
+            "description": "Condition of the resource"
+          },
+          "apiVersion": {
+            "type": "string",
+            "description": "API Version of the resource type"
+          },
+          "dependsOn": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Collection of resources this resource depends on"
+          }
+        },
+        "required": [
+          "name",
+          "type",
+          "apiVersion"
+        ]
+      },
+      "proxyResourceBase": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/ARMResourceBase"
+          },
+          {
+            "properties": {
+              "location": {
+                "$ref": "#/definitions/resourceLocations",
+                "description": "Location to deploy resource to"
+              }
+            }
+          }
+        ]
+      },
+      "resourceBase": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/ARMResourceBase"
+          },
+          {
+            "properties": {
+              "location": {
+                "$ref": "#/definitions/resourceLocations",
+                "description": "Location to deploy resource to"
+              },
+              "tags": {
+                "type": "object",
+                "description": "Name-value pairs to add to the resource"
+              },
+              "copy": {
+                "$ref": "#/definitions/resourceCopy"
+              },
+              "comments": {
+                "type": "string"
+              }
+            }
+          }
+        ]
+      },
+      "resourceBaseExternal": {
+        "$ref": "#/definitions/resourceBase",
+        "required": [
+          "plan"
+        ]
+      },
+      "resourceSku": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the sku"
+          },
+          "tier": {
+            "type": "string",
+            "description": "Tier of the sku"
+          },
+          "size": {
+            "type": "string",
+            "description": "Size of the sku"
+          },
+          "family": {
+            "type": "string",
+            "description": "Family of the sku"
+          },
+          "capacity": {
+            "type": "integer",
+            "description": "Capacity of the sku"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "resourceCopy": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the copy"
+          },
+          "count": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/expression"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "description": "Count of the copy"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "Parallel",
+              "Serial"
+            ],
+            "description": "The copy mode"
+          },
+          "batchSize": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/expression"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "description": "The serial copy batch size"
+          }
+        }
+      },
+      "resourceKind": {
+        "type": "string",
+        "maxLength": 64,
+        "pattern": "(^[a-zA-Z0-9_.()-]+$)",
+        "description": "Kind of resource"
+      },
+      "resourcePlan": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the plan"
+          },
+          "promotionCode": {
+            "type": "string",
+            "description": "Plan promotion code"
+          },
+          "publisher": {
+            "type": "string",
+            "description": "Name of the publisher"
+          },
+          "product": {
+            "type": "string",
+            "description": "Name of the product"
+          },
+          "version": {
+            "type": "string",
+            "description": "Version of the product"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "description": "Plan of the resource"
+      },
+      "resourceLocations": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "enum": [
+              "East Asia",
+              "Southeast Asia",
+              "Central US",
+              "East US",
+              "East US 2",
+              "West US",
+              "North Central US",
+              "South Central US",
+              "North Europe",
+              "West Europe",
+              "Japan West",
+              "Japan East",
+              "Brazil South",
+              "Australia East",
+              "Australia Southeast",
+              "Central India",
+              "West India",
+              "South India",
+              "Canada Central",
+              "Canada East",
+              "West Central US",
+              "West US 2",
+              "UK South",
+              "UK West",
+              "Korea Central",
+              "Korea South",
+              "global"
+            ]
+          }
+        ]
+      },
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "$ref": "#/definitions/parameterTypes",
+            "description": "Type of input parameter"
+          },
+          "defaultValue": {
+            "$ref": "#/definitions/parameterValueTypes",
+            "description": "Default value to be used if one is not provided"
+          },
+          "allowedValues": {
+            "type": "array",
+            "description": "Value can only be one of these values"
+          },
+          "metadata": {
+            "type": "object",
+            "description": "Metadata for the parameter, can be any valid JSON object"
+          },
+          "minValue": {
+            "type": "integer",
+            "description": "Minimum value for the int type parameter"
+          },
+          "maxValue": {
+            "type": "integer",
+            "description": "Maximum value for the int type parameter"
+          },
+          "minLength": {
+            "type": "integer",
+            "description": "Minimum length for the string or array type parameter"
+          },
+          "maxLength": {
+            "type": "integer",
+            "description": "Maximum length for the string or array type parameter"
+          }
+        },
+        "required": [ "type" ],
+        "description": "Input parameter definitions"
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "$ref": "#/definitions/parameterTypes",
+            "description": "Type of output value"
+          },
+          "value": {
+            "$ref": "#/definitions/parameterValueTypes",
+            "description": "Value assigned for output"
+          }
+        },
+        "required": [ "type", "value" ],
+        "description": "Set of output parameters"
+      },
+      "parameterTypes": {
+        "enum": [ "string", "securestring", "int", "bool", "object", "secureObject", "array" ]
+      },
+      "parameterValueTypes": {
+        "type": [ "string", "boolean", "integer", "number", "object", "array", "null" ]
+      },
+      "keyVaultReference": {
+        "type": "object",
+        "properties": {
+          "keyVault": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [ "id" ],
+            "additionalProperties": false
+          },
+          "secretName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "secretVersion": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "keyVault",
+          "secretName"
+        ],
+        "additionalProperties": false
+      },
+      "expression": {
+        "type": "string",
+        "pattern": "^\\[(json|if|and|or|not|concat|parameters|variables|deployment|reference|resourceId|resourceGroup|subscription|list.*|base64|providers|copyIndex|padLeft|replace|toLower|toUpper|startsWith|endsWith|length|split|skip|take|contains|intersection|union|first|last|indexOf|lastIndexOf|add|sub|mul|div|mod|min|max|range|string|int|float|bool|trim|uri|uniqueString|substring|base64ToString|base64ToJson|uriComponentToString|uriComponent|dataUriToString|dataUri|array|createArray|coalesce|empty|less|lessOrEquals|greater|greaterOrEquals|equals)\\(.*\\).*\\]$",
+        "description": "Deployment template expression. Expressions are enclosed in [] and must start with a function of json(), if(), and(), or(), not(), concat(), parameters(), variables(), deployment(), reference(), resourceId(), resourceGroup(), subscription(), list*(), base64(), providers(), copyIndex(), padLeft(), replace(), toLower(), toUpper(), length(), split(), skip(), take(), add(), sub(), mul(), div(), mod(), string(), int(), trim(), uri(), uniqueString(), substring(), empty(), contains(), intersection(), union(), first(), last(), indexOf(), lastIndexOf(), startsWith(), endsWith(), min(), max(), range(), base64ToString(), base64ToJson(), uriComponentToString(), uriComponent(), dataUriToString(), dataUri(), array(), createArray(), coalesce(), float(), bool(), less(), lessOrEquals(), greater(), greaterOrEquals(), equals()"
+      },
+      "numberOrExpression": {
+        "oneOf": [
+          { "type": "number" },
+          { "$ref": "#/definitions/expression" }
+        ]
+      },
+      "Iso8601Duration": {
+        "type": "string",
+        "pattern": "^P(\\d+Y)?(\\d+M)?(\\d+D)?(T(((\\d+H)(\\d+M)?(\\d+(\\.\\d{1,2})?S)?)|((\\d+M)(\\d+(\\.\\d{1,2})?S)?)|((\\d+(\\.\\d{1,2})?S))))?$"
+      },
+      "UTC": {
+        "type": "string",
+        "pattern": "^\\d{4}(-(0[1-9]|1[0-2])(-([012]\\d|3[01])(T((([01]\\d|2[0123]):[0-5]\\d)|(24:00))(:(([0-5]\\d)|60)(\\.\\d{1,}){0,1}){0,1}){0,1}((Z)|([+-]((([01]\\d|2[0123]):[0-5]\\d)|(24:00)))){0,1}){0,1}){0,1}$"
+      },
+      "apiVersion": {
+        "type": "string",
+        "pattern": "(^((\\d\\d\\d\\d-\\d\\d-\\d\\d)|([0-9]+(\\.[0-9]+)?))(-[a-zA-Z][a-zA-Z0-9]*)?$)",
+        "description": "API version of the resource type"
+      }
+    }
+  }
+}
